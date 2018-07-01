@@ -10,6 +10,9 @@ html {
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.16;
 }
 .visually-hidden {
   position: absolute;
@@ -17,4 +20,82 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+.headline {
+  font-size: 25px;
+  color: #404040;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  line-height: 27px;
+  color: #fff;
+  background-color: #71c10d;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+}
+.btn:hover {
+  background-color: #5b9b0a;
+  cursor: pointer;
+}
+/*** Global Styles ***/
+/* Block - header */
+.header__slider {
+  position: relative;
+  height: 400px;
+  max-width: 1180px;
+  margin: 0 auto;
+  z-index: 1;
+  overflow: hidden;
+}
+.header__slider:before {
+  position: absolute;
+  top: -50px;
+  left: -160px;
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  width: 300px;
+  height: 1000px;
+  content: "";
+  display: block;
+  background-color: white;
+  border-right: .1px solid #c7c7c7;
+  -webkit-box-shadow: inset 0px 0px 28.35px 6.65px rgba(0, 0, 0, 0.32);
+          box-shadow: inset 0px 0px 28.35px 6.65px rgba(0, 0, 0, 0.32);
+  z-index: 999;
+}
+.header__slider:after {
+  position: absolute;
+  top: -50px;
+  right: -160px;
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+  width: 300px;
+  height: 1000px;
+  content: "";
+  display: block;
+  background-color: white;
+  border-left: .2px solid #c7c7c7;
+  -webkit-box-shadow: inset 0px 0px 28.35px 6.65px rgba(0, 0, 0, 0.32);
+          box-shadow: inset 0px 0px 28.35px 6.65px rgba(0, 0, 0, 0.32);
+  z-index: 999;
+}
+.slider-head__item {
+  text-align: center;
+  height: 500px;
+  background: url(../img/header_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.slider-head__content {
+  margin-left: 240px;
+  max-width: 311px;
+  text-align: left;
 }
