@@ -13,9 +13,33 @@
 <body>
 	<header class="header">
 		<div class="header__slider slider-head">
+				<div class="slider-head__item slider-head__item--current">
+					<div class="slider-head__content">
+						<h2 class="headline">Комплексный подход 1</h2>
+						<div class="slider-head__text">
+							Проектирование и строительство “под ключ” дома
+							вашей мечты - наша главная задача. Узнать больше
+							о нас вы можете на страницах портфолио 
+							построенных нами работ.
+						</div>
+						<a href="" class="btn btn--link btn--main">Узнать</a>
+					</div>
+				</div>
 				<div class="slider-head__item">
 					<div class="slider-head__content">
-						<h2 class="headline">Комплексный подход</h2>
+						<h2 class="headline">Комплексный подход 2</h2>
+						<div class="slider-head__text">
+							Проектирование и строительство “под ключ” дома
+							вашей мечты - наша главная задача. Узнать больше
+							о нас вы можете на страницах портфолио 
+							построенных нами работ.
+						</div>
+						<a href="" class="btn btn--link btn--main">Узнать</a>
+					</div>
+				</div>
+				<div class="slider-head__item">
+					<div class="slider-head__content">
+						<h2 class="headline">Комплексный подход 3</h2>
 						<div class="slider-head__text">
 							Проектирование и строительство “под ключ” дома
 							вашей мечты - наша главная задача. Узнать больше
@@ -100,7 +124,7 @@
 						</div>
 					</div>	
 					<ul class="tabs">
-						<li class="tabs__item">
+						<li class="tabs__item" data-id="wall">
 							<div class="tabs__content">
 								<div class="tabs__icon">
 									<img class="tabs__img" src="img/wall.png" alt="">
@@ -109,7 +133,7 @@
 								<p class="tabs__name">Стены</p>
 							</div>
 						</li>
-						<li class="tabs__item">
+						<li class="tabs__item" data-id="foundation">
 							<div class="tabs__content">
 								<div class="tabs__icon">
 									<img class="tabs__img" src="img/foundation.png" alt="">
@@ -118,7 +142,7 @@
 								<p class="tabs__name">Фундамент</p>
 							</div>
 						</li>
-						<li class="tabs__item">
+						<li class="tabs__item" data-id="windows">
 							<div class="tabs__content">
 								<div class="tabs__icon">
 									<img class="tabs__img" src="img/window.png" alt="">
@@ -127,7 +151,7 @@
 								<p class="tabs__name">Окна</p>
 							</div>
 						</li>
-						<li class="tabs__item">
+						<li class="tabs__item" data-id="tunnel">
 							<div class="tabs__content">
 								<div class="tabs__icon">
 									<img class="tabs__img" src="img/tunnel.png" alt="">
@@ -136,7 +160,7 @@
 								<p class="tabs__name">Дымоходы</p>
 							</div>
 						</li>
-						<li class="tabs__item">
+						<li class="tabs__item" data-id="overlay">
 							<div class="tabs__content">
 								<div class="tabs__icon">
 									<img class="tabs__img" src="img/overlay.png" alt="">
@@ -145,7 +169,7 @@
 								<p class="tabs__name">Перекрытия</p>
 							</div>
 						</li>
-						<li class="tabs__item">
+						<li class="tabs__item" data-id="roof">
 							<div class="tabs__content">
 								<div class="tabs__icon">
 									<img class="tabs__img" src="img/roof.png" alt="">
@@ -157,7 +181,67 @@
 					</ul>
 				</div>
 				<div class="build__right-part">
-					<div class="build__show-tab show-tab">
+					<div class="build__show-tab show-tab show-tab--active" id="wall">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+					<div class="build__show-tab show-tab" id="foundation">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши 1</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+					<div class="build__show-tab show-tab" id="windows">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши 2</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+					<div class="build__show-tab show-tab" id="tunnel">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши 3</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+					<div class="build__show-tab show-tab" id="overlay">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши 4</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+					<div class="build__show-tab show-tab" id="roof">
 						<div class="show-tab__content">
 							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши</h3>
 							<div class="show-tab__intro">
