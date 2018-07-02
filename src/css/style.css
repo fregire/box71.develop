@@ -97,7 +97,7 @@ section {
   margin-top: 5px;
   margin-bottom: 0;
   font-size: 9px;
-  font-weight: 100;
+  font-weight: 300;
 }
 .logo__image {
   position: absolute;
@@ -420,6 +420,9 @@ section {
 .content--max {
   max-width: 680px;
 }
+.content--min {
+  max-width: 482px;
+}
 .content__text-overlay {
   position: absolute;
   top: -8px;
@@ -449,11 +452,12 @@ section {
   margin-bottom: 60px;
 }
 .story__steps {
+  position: relative;
   max-width: 583px;
   min-height: 190px;
   padding-left: 320px;
   padding-top: 30px;
-  background-color: #eeebeb;
+  background: #eeebeb;
 }
 .story__steps-headline {
   font-weight: normal;
@@ -465,4 +469,81 @@ section {
 }
 .story__steps-items {
   padding-left: 15px;
+}
+.story__steps-img,
+.story__house {
+  position: absolute;
+}
+.story__house {
+  bottom: 5px;
+  left: -40px;
+}
+.story__steps-img {
+  left: 583px;
+  bottom: 0;
+}
+/* Block - build */
+.build__content {
+  margin-bottom: 25px;
+}
+/* Block - tabs */
+.tabs {
+  padding: 0;
+  margin: 0;
+  height: 150px;
+  width: 520px;
+  list-style: none;
+  background: #fbfbf8 url(../img/BG-мы-строим.png) no-repeat;
+  background-size: cover;
+}
+.tabs__item {
+  position: relative;
+  height: 150px;
+  width: 130px;
+  color: #4c4c4c;
+}
+.tabs__item:hover {
+  background: #404040;
+  cursor: pointer;
+  color: #fff;
+}
+.tabs__item:hover .tabs__img--hover {
+  opacity: 1;
+}
+.tabs__img--hover,
+.tabs__item {
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+.tabs__content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+.tabs__name {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.tabs__icon {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+}
+.tabs__img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.tabs__img--hover {
+  opacity: 0;
 }
