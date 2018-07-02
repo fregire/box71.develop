@@ -9,5 +9,6 @@ $(document).ready(function(){
 		slidesToShow: 4,
 		prevArrow: "<button class='projects__arrow btn btn--arrow btn--prev'>Назад</button>",
 		nextArrow: "<button class='projects__arrow btn btn--arrow btn--next'>Еще</button>",
+		lazyLoad: 'ondemand',
 	})
 });

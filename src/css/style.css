@@ -666,14 +666,16 @@ section {
   list-style: none;
   padding-left: 0;
   margin: 0 -83px;
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 .projects__item {
   position: relative;
   width: 286px;
   height: 200px;
-  background: url(../img/house-example.jpg) no-repeat;
-  background-size: cover;
+  overflow: hidden;
+}
+.projects__item-bg {
+  width: 100%;
 }
 .projects__item:hover .projects__overlay {
   opacity: 1;
