@@ -92,9 +92,33 @@ $(document).ready(function(){
 	// Открытие/Закрытие окна обратного звонка
 	$(".btn--callback").click(function(){
 		$(".modal").removeClass("modal--closed");
+		$(".modal__content--callback").fadeIn();
+		$("html").addClass("popup-opened");
 	});	
 
 	$(".modal__close").click(function(){
 		$(".modal").addClass("modal--closed");
+		$(".modal__content--callback").fadeOut();
+		$(".modal__content--project").fadeOut();
+		$("html").removeClass("popup-opened");
+	});
+
+	$(".projects__item").click(function(){
+		 $(window).trigger('resize');
+		$(".modal").removeClass("modal--closed");
+		$(".modal__content--project").fadeIn();
+		$("html").addClass("popup-opened");
+	});
+
+	$(".project__pict-slider").slick({
+		slidesToShow: 5,
+		asNavFor: ".project__main-pict",
+		focusOnSelect: true,
+		prevArrow: "<button class='project__arrows btn btn--arrow btn--prev'>Назад</button>",
+		nextArrow: "<button class='project__arrows btn btn--arrow btn--next'>Еще</button>",
+	});
+	$(".project__main-pict").slick({
+		slidesToShow: 1,
+		asNavFor: ".project__pict-slider"
 	})
 });
