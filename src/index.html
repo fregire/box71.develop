@@ -402,9 +402,32 @@
 				<!-- Captcha от google -->
 				<img class="form__captcha captcha" src="img/captcha.png" alt="Captcha">
 
-				<button class="form__btn btn btn--main">Обратный звонок</button>
+				<button class="form__btn btn btn--main btn--callback">Обратный звонок</button>
 			</form>
 			<button class="modal__close" aria-label="Закрыть окно"></button>
+		</div>
+		<div class="modal__content modal__content--order">
+			<form action="#" class="form form--order">
+				<div class="content">
+					<p class="content__descr">Заказать</p>
+					<h2 class="content__headline headline"><span class="lighten-text lighten-text--headline">Заказать</span> проект</h2>
+					<div class="content__text">
+						Оставьте свои данные!
+					</div>
+				</div>
+				<label class="form__field form__field--name">
+					<input class="field" type="text" placeholder="Имя*">
+				</label>
+				<label class="form__field form__field--phone">
+					<input class="field" type="text" placeholder="Телефон*">
+				</label>
+				<input type="hidden" name="project_id">
+				<!-- Captcha от google -->
+				<img class="form__captcha captcha" src="img/captcha.png" alt="Captcha">
+
+				<button class="form__btn btn btn--main btn--order">Заказать</button>
+			</form>
+			<button class="modal__close" aria-label="Закрыть окно"></button>		
 		</div>
 		<div class="modal__content modal__content--project project">
 			<div class="project__preview">
@@ -449,7 +472,70 @@
 				</div>
 			</div>
 			<div class="project__descr">
-				<h3 class="headline"><span class="lighten-text">Технические</span> характеристики</h3>
+				<h3 class="project__descr-headline headline"><span class="lighten-text">Технические</span> характеристики</h3>
+				<table class="project__parameters">
+					<tr class="project__param">
+						<td class="project__param-name">Общая площадь дома </td>
+						<td class="project__param-value">169 м2</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Площадь отапливаемых помещений </td>
+						<td class="project__param-value">161 м2</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Площади крылец и террас </td>
+						<td class="project__param-value">26,6 м2</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Габаритные размеры  </td>
+						<td class="project__param-value">11,7 Х 11 м</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Тип</td>
+						<td class="project__param-value"> Газобетон, кирпич, керамика</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Стиль</td>
+						<td class="project__param-value">Английская классика</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Количество полных этажей</td>
+						<td class="project__param-value">2</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Количество спален</td>
+						<td class="project__param-value">4</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Количество санузлов </td>
+						<td class="project__param-value">2</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Высота первого этажа</td>
+						<td class="project__param-value">3.0 м</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Высота второго этажа </td>
+						<td class="project__param-value"> 2.7 м</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Тип фундамента</td>
+						<td class="project__param-value">Монолитная плита фундамента</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Материал стен </td>
+						<td class="project__param-value">Газобетонные блоки</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Тип межэтажных перекрытий</td>
+						<td class="project__param-value">Монолитная железобетонная плита</td>
+					</tr>
+					<tr class="project__param">
+						<td class="project__param-name">Тип кровельного покрытия </td>
+						<td class="project__param-value">Гибкая битумная черепица</td>
+					</tr>
+				</table>
+				<button class="project__btn btn btn--main btn--order">Заказать проект</button>
 			</div>
 			<button class="modal__close" aria-label="Закрыть окно"></button>
 		</div>

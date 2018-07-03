@@ -100,6 +100,7 @@ $(document).ready(function(){
 		$(".modal").addClass("modal--closed");
 		$(".modal__content--callback").fadeOut();
 		$(".modal__content--project").fadeOut();
+		$(".modal__content--order").fadeOut();
 		$("html").removeClass("popup-opened");
 	});
 
@@ -120,5 +121,9 @@ $(document).ready(function(){
 	$(".project__main-pict").slick({
 		slidesToShow: 1,
 		asNavFor: ".project__pict-slider"
+	});
+	$(".btn--order").click(function(){
+		$(".modal__content--order").fadeIn();
+		$(".modal").css("overflow-x", "hidden");
 	})
 });
