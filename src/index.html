@@ -13,7 +13,7 @@
 <body>
 	<header class="header">
 		<div class="header__slider slider-head">
-				<div class="slider-head__item slider-head__item--current">
+				<div class="slider-head__item slider-head__item--current" data-index="1" style="background-image: url(img/header_bg.jpg);">
 					<div class="slider-head__content">
 						<h2 class="headline">Комплексный подход 1</h2>
 						<div class="slider-head__text">
@@ -25,7 +25,7 @@
 						<a href="" class="btn btn--link btn--main">Узнать</a>
 					</div>
 				</div>
-				<div class="slider-head__item">
+				<div class="slider-head__item" data-index="2" style="background-image: url(img/дымоход-картинка.png);">
 					<div class="slider-head__content">
 						<h2 class="headline">Комплексный подход 2</h2>
 						<div class="slider-head__text">
@@ -37,7 +37,7 @@
 						<a href="" class="btn btn--link btn--main">Узнать</a>
 					</div>
 				</div>
-				<div class="slider-head__item">
+				<div class="slider-head__item" data-index="3" style="background-image: url(img/крыши.png);">
 					<div class="slider-head__content">
 						<h2 class="headline">Комплексный подход 3</h2>
 						<div class="slider-head__text">
@@ -55,7 +55,7 @@
 				</button>
 				<button class="slider-head__arrow slider-head__arrow--next">
 					<span class="visually-hidden">Следующий слайд</span>
-					<span class="slider-head__index-next btn btn--slider">03</span>
+					<span class="slider-head__index-next btn btn--slider">02</span>
 				</button>
 		</div>
 		<div class="header__nav nav">
@@ -123,6 +123,8 @@
 							Мы  специализируемся на строительстве и проектировании жилых и общественных зданий, используя передовые технологии и современные материалы. В данном разделе вы можете ознакомиться с теми материалами которые мы используем в строительстве.
 						</div>
 					</div>	
+					<!-- При выводе постов каждому посту задается id из произвольного поля и присваивается в data-id
+					Затем это же проделывается с show-tab, только уже с обычными id -->
 					<ul class="tabs">
 						<li class="tabs__item" data-id="wall">
 							<div class="tabs__content">
