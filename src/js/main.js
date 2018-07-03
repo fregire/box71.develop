@@ -88,4 +88,13 @@ $(document).ready(function(){
 		$(".show-tab").removeClass("show-tab--active");
 		$(".show-tab#" + $id).addClass("show-tab--active");
 	});
+
+	// Открытие/Закрытие окна обратного звонка
+	$(".btn--callback").click(function(){
+		$(".modal").removeClass("modal--closed");
+	});	
+
+	$(".modal__close").click(function(){
+		$(".modal").addClass("modal--closed");
+	})
 });

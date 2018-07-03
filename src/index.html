@@ -383,7 +383,30 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal modal--closed">
+		<div class="modal__content modal__content--callback">
+			<form action="#" class="form">
+				<div class="content">
+					<p class="content__descr">Контакты</p>
+					<h2 class="content__headline headline"><span class="lighten-text lighten-text--headline">Связаться</span> с нами</h2>
+					<div class="content__text">
+						Оставьте свои данные!
+					</div>
+				</div>
+				<label class="form__field form__field--name">
+					<input class="field" type="text" placeholder="Имя*">
+				</label>
+				<label class="form__field form__field--phone">
+					<input class="field" type="text" placeholder="Телефон*">
+				</label>
 
+				<img class="form__captcha captcha" src="img/captcha.png" alt="Captcha">
+
+				<button class="form__btn btn btn--main">Обратный звонок</button>
+			</form>
+			<button class="modal__close" aria-label="Закрыть окно"></button>
+		</div>
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
