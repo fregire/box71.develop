@@ -91,22 +91,22 @@ $(document).ready(function(){
 
 	// Открытие/Закрытие окна обратного звонка
 	$(".btn--callback").click(function(){
-		$(".modal").removeClass("modal--closed");
+		$(".modal").fadeIn(500);
 		$(".modal__content--callback").fadeIn(400);
 		$("html").addClass("popup-opened");
 	});	
 
 	$(".modal__close").not(".modal__close--order").click(function(){
-		$(".modal").addClass("modal--closed");
-		$(".modal__content--callback").fadeOut(400);
-		$(".modal__content--project").fadeOut(400);
-		$(".modal__content--order").fadeOut(400);
+		$(".modal").fadeOut();
+		$(".modal__content--callback").fadeOut();
+		$(".modal__content--project").fadeOut();
+		$(".modal__content--order").fadeOut();
 		$("html").removeClass("popup-opened");
 	});
 
 	$(".projects__item").click(function(){
 		 $(window).trigger('resize');
-		$(".modal").removeClass("modal--closed");
+		$(".modal").fadeIn(500);
 		$(".modal__content--project").fadeIn(400);
 		$("html").addClass("popup-opened");
 	});

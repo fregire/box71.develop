@@ -600,6 +600,7 @@ section {
 }
 
 .modal {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -612,15 +613,9 @@ section {
 
 	background-color: rgba(0,0,0,.5);
 
-	z-index: 10;
 	transition: all 400ms;
 
 	overflow-y: scroll;
-}
-
-.modal--closed {
-	opacity: 0;
-	z-index: -1;
 }
 
 .modal__overlay {
@@ -920,7 +915,7 @@ section {
 
 .show-tab--active {
 	opacity: 1;
-	z-index: 1;
+	z-index: 0;
 }
 
 .show-tab__content {
