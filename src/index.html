@@ -384,6 +384,7 @@
 		</div>
 	</footer>
 	<div class="modal modal--closed">
+		<div class="modal__overlay"></div>
 		<div class="modal__content modal__content--callback">
 			<form action="#" class="form">
 				<div class="content">
@@ -401,8 +402,8 @@
 				</label>
 				<!-- Captcha от google -->
 				<img class="form__captcha captcha" src="img/captcha.png" alt="Captcha">
-
-				<button class="form__btn btn btn--main btn--callback">Обратный звонок</button>
+				
+				<input class="form__btn btn btn--main btn--callback" type="submit" value="Обратный звонок">
 			</form>
 			<button class="modal__close" aria-label="Закрыть окно"></button>
 		</div>
@@ -424,10 +425,10 @@
 				<input type="hidden" name="project_id">
 				<!-- Captcha от google -->
 				<img class="form__captcha captcha" src="img/captcha.png" alt="Captcha">
-
-				<button class="form__btn btn btn--main btn--order">Заказать</button>
+				
+				<input class="form__btn btn btn--main btn--order" type="submit" value="Заказать">
 			</form>
-			<button class="modal__close" aria-label="Закрыть окно"></button>		
+			<button class="modal__close modal__close--order" aria-label="Закрыть окно"></button>		
 		</div>
 		<div class="modal__content modal__content--project project">
 			<div class="project__preview">

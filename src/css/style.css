@@ -495,6 +495,7 @@ section {
   min-height: 100vh;
   width: 100%;
   height: 100%;
+  padding-bottom: 50px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
   -webkit-transition: all 400ms;
@@ -505,6 +506,16 @@ section {
 .modal--closed {
   opacity: 0;
   z-index: -1;
+}
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 250%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .modal__content {
   display: none;
@@ -521,6 +532,9 @@ section {
   width: 550px;
   padding: 45px 55px;
   z-index: 10;
+}
+.modal__content--order {
+  position: fixed;
 }
 .modal__content--project {
   top: 80px;
@@ -635,6 +649,7 @@ section {
 }
 .project__descr {
   margin-top: 34px;
+  padding-bottom: 70px;
 }
 .project__descr-headline {
   margin-left: 70px;
