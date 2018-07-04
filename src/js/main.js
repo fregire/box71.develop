@@ -131,4 +131,9 @@ $(document).ready(function(){
 		$(".modal__content--order").fadeOut(400);
 		$(".modal__overlay").css("z-index", "-1");
 	});
+	// Фильтр проектов
+	$(".projects__option").click(function(){
+		$(this).addClass("projects__option--current");
+		$(this).addClass("projects__option--current");
+	});
 });
