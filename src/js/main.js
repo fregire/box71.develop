@@ -130,5 +130,5 @@ $(document).ready(function(){
 	$(".modal__close--order").click(function(){
 		$(".modal__content--order").fadeOut(400);
 		$(".modal__overlay").css("z-index", "-1");
-	})
+	});
 });

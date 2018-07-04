@@ -343,6 +343,11 @@ template {
 article,
 aside,
 section,
-nav {
+nav,
+address {
   display: block;
+}
+
+address {
+  font-style: normal;
 }
