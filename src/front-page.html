@@ -91,95 +91,220 @@
 	</header>
 	<main class="main">
 		<div class="main__inner">
-			<section class="steps">
-				<div class="content content--min">
+			<section class="story">
+				<div class="story__content content content--max">
 					<span class="content__text-overlay">
-						<span class="lighten-text lighten-text--headline">Этапы</span>  строительства
+						<span class="lighten-text lighten-text--headline">Box 71</span>  Это
+					</span>
+					<p class="content__descr">О компании</p>
+					<h2 class="content__headline headline"><span class="lighten-text lighten-text--headline">Box 71</span> история</h2>
+					<div class="content__text">
+						Наша компания это дружный и креативный коллектив, мы стремимся строить и проектировать лучшие дома и коттеджи в Москве и области, вкладывая 100% своих возможностей в общее дело. Мы специализируемся на строительстве и проектировании загородных домов из газобетона, щелевого кирпича и теплой керамики, используя передовые технологии и надежные материалы. За время нашей работы накоплен серьезный опыт в проектировании и строительстве загородных домов, отработаны схемы контроля качества проектной документации и строительных работ. За годы работы наЯш коллектив преодолел множество испытаний и успешно выполнил тысячи задач строительства и архитектуры. Мы поняли, что главное в жизни любого человека, и нашей компании в частности,- это добросовестное отношение и любовь к своему делу.
+					</div>
+				</div>
+				<div class="story__steps">
+					<img  class="story__house" src="img/просто-дом.png" alt="Дом">
+					<h3 class="story__steps-headline"><span class="lighten-text">Этапы</span> сотрудничества</h3>
+					<ol class="story__steps-items">
+						<li class="story__steps-item">Разработка индивидуального плана</li>
+						<li class="story__steps-item">Компютерная визуализация дома</li>
+						<li class="story__steps-item">Согласоваеие всех нюансов </li>
+						<li class="story__steps-item">Строительство</li>
+					</ol>
+					<img class="story__steps-img" src="img/Схема+план+визуализация.png" alt="Схема работы">
+				</div>
+			</section>
+			<section class="build">
+				<div class="build__left-part">
+					<div class="build__content content content--min">
+						<p class="content__descr">Успех</p>
+						<h2 class="content__headline headline"><span class="lighten-text lighten-text--headline">Из чего</span> мы строим</h2>
+						<div class="content__text">
+							Мы  специализируемся на строительстве и проектировании жилых и общественных зданий, используя передовые технологии и современные материалы. В данном разделе вы можете ознакомиться с теми материалами которые мы используем в строительстве.
+						</div>
+					</div>	
+					<!-- При выводе постов каждому посту задается id из произвольного поля и присваивается в data-id
+					Затем это же проделывается с show-tab, только уже с обычными id -->
+					<ul class="tabs">
+						<li class="tabs__item" data-id="wall">
+							<div class="tabs__content">
+								<div class="tabs__icon">
+									<img class="tabs__img" src="img/wall.png" alt="">
+									<img class="tabs__img tabs__img--hover" src="img/wall_hover.png" alt="">
+								</div>
+								<p class="tabs__name">Стены</p>
+							</div>
+						</li>
+						<li class="tabs__item" data-id="foundation">
+							<div class="tabs__content">
+								<div class="tabs__icon">
+									<img class="tabs__img" src="img/foundation.png" alt="">
+									<img class="tabs__img tabs__img--hover" src="img/foundation_hover.png" alt="">
+								</div>
+								<p class="tabs__name">Фундамент</p>
+							</div>
+						</li>
+						<li class="tabs__item" data-id="windows">
+							<div class="tabs__content">
+								<div class="tabs__icon">
+									<img class="tabs__img" src="img/window.png" alt="">
+									<img class="tabs__img tabs__img--hover" src="img/window_hover.png" alt="">
+								</div>
+								<p class="tabs__name">Окна</p>
+							</div>
+						</li>
+						<li class="tabs__item" data-id="tunnel">
+							<div class="tabs__content">
+								<div class="tabs__icon">
+									<img class="tabs__img" src="img/tunnel.png" alt="">
+									<img class="tabs__img tabs__img--hover" src="img/tunnel_hover.png" alt="">
+								</div>
+								<p class="tabs__name">Дымоходы</p>
+							</div>
+						</li>
+						<li class="tabs__item" data-id="overlay">
+							<div class="tabs__content">
+								<div class="tabs__icon">
+									<img class="tabs__img" src="img/overlay.png" alt="">
+									<img class="tabs__img tabs__img--hover" src="img/overlay_hover.png" alt="">
+								</div>
+								<p class="tabs__name">Перекрытия</p>
+							</div>
+						</li>
+						<li class="tabs__item" data-id="roof">
+							<div class="tabs__content">
+								<div class="tabs__icon">
+									<img class="tabs__img" src="img/roof.png" alt="">
+									<img class="tabs__img tabs__img--hover" src="img/roof_hover.png" alt="">
+								</div>
+								<p class="tabs__name">Крыши</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="build__right-part">
+					<div class="build__show-tab show-tab show-tab--active" id="wall">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+					<div class="build__show-tab show-tab" id="foundation">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши 1</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+					<div class="build__show-tab show-tab" id="windows">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши 2</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+					<div class="build__show-tab show-tab" id="tunnel">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши 3</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+					<div class="build__show-tab show-tab" id="overlay">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши 4</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+					<div class="build__show-tab show-tab" id="roof">
+						<div class="show-tab__content">
+							<h3 class="show-tab__headline"><span class="lighten-text">Возведение</span> крыши</h3>
+							<div class="show-tab__intro">
+								Зачастую строителям приходится находить решение 
+								массы совершенно разных задач в процессе возведения дома, а это требует высококвалифицированного подхода. 
+								Одной из таких сложностей является обустройство 
+							</div>
+							<a href="#" class="show-tab__more">Подробнее</a>
+							<span class="show-tab__name">Кровля</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="projects">
+				<div class="projects__content content content--min">
+					<span class="content__text-overlay">
+						<span class="lighten-text lighten-text--headline">Наши</span>  Проекты
 					</span>
 					<p class="content__descr">Успех</p>
-					<h2 class="content__headline headline"><span class="lighten-text lighten-text--headline">Этапы</span> строительства</h2>
+					<h2 class="content__headline headline"><span class="lighten-text lighten-text--headline">Наши</span> проекты</h2>
 					<div class="content__text">
 						Наша компания это дружный и креативный коллектив, мы стремимся строить ипроектировать лучшие дома и коттеджи в Москве и области, вкладывая 100% своих возможностей в общее дело. Мы специализируемся на строите
 					</div>
 				</div>
-				<ul class="steps__list">
-					<li class="steps__item">
-						<div class="steps__icon">
-							<div class="steps__overlay">
-								<img class="steps__img" src="img/meet-icon.png" alt="Встречаемся и обсуждаем будущий проект">
-							</div>
+				<ul class="projects__list">
+					<li class="projects__item">
+						<img  class="projects__item-bg" data-lazy="img/house-example.jpg" alt="">
+						<div class="projects__overlay">
+								<p class="projects__tags">3 комнаты 2 сан узла<br> бассейн, гараж </p>
+								<p class="projects__name">Нортон</p>
 						</div>
-						<p class="steps__name">Встречаемся и обсуждаем будущий проект</p>
 					</li>
-					<li class="steps__item">
-						<div class="steps__icon">
-							<div class="steps__overlay">
-								<img class="steps__img" src="img/meet-icon.png" alt="Встречаемся и обсуждаем будущий проект">
-							</div>
+					<li class="projects__item">
+						<img  class="projects__item-bg" data-lazy="img/house-example.jpg" alt="">
+						<div class="projects__overlay">
+								<p class="projects__tags">3 комнаты 2 сан узла<br> бассейн, гараж </p>
+								<p class="projects__name">Нортон</p>
 						</div>
-						<p class="steps__name">Встречаемся и обсуждаем будущий проект</p>
 					</li>
-					<li class="steps__item">
-						<div class="steps__icon">
-							<div class="steps__overlay">
-								<img class="steps__img" src="img/meet-icon.png" alt="Встречаемся и обсуждаем будущий проект">
-							</div>
+					<li class="projects__item">
+						<img  class="projects__item-bg" data-lazy="img/house-example.jpg" alt="">
+						<div class="projects__overlay">
+								<p class="projects__tags">3 комнаты 2 сан узла<br> бассейн, гараж </p>
+								<p class="projects__name">Нортон</p>
 						</div>
-						<p class="steps__name">Встречаемся и обсуждаем будущий проект</p>
 					</li>
-					<li class="steps__item">
-						<div class="steps__icon">
-							<div class="steps__overlay">
-								<img class="steps__img" src="img/meet-icon.png" alt="Встречаемся и обсуждаем будущий проект">
-							</div>
+					<li class="projects__item">
+						<img  class="projects__item-bg" data-lazy="img/house-example.jpg" alt="">
+						<div class="projects__overlay">
+								<p class="projects__tags">3 комнаты 2 сан узла<br> бассейн, гараж </p>
+								<p class="projects__name">Нортон</p>
 						</div>
-						<p class="steps__name">Встречаемся и обсуждаем будущий проект</p>
 					</li>
-					<li class="steps__item">
-						<div class="steps__icon">
-							<div class="steps__overlay">
-								<img class="steps__img" src="img/meet-icon.png" alt="Встречаемся и обсуждаем будущий проект">
-							</div>
+					<li class="projects__item">
+						<img  class="projects__item-bg" data-lazy="img/house-example-2.png" alt="">
+						<div class="projects__overlay">
+								<p class="projects__tags">3 комнаты 2 сан узла<br> бассейн, гараж </p>
+								<p class="projects__name">Нортон</p>
 						</div>
-						<p class="steps__name">Встречаемся и обсуждаем будущий проект</p>
-					</li>
-					<li class="steps__item">
-						<div class="steps__icon">
-							<div class="steps__overlay">
-								<img class="steps__img" src="img/meet-icon.png" alt="Встречаемся и обсуждаем будущий проект">
-							</div>
-						</div>
-						<p class="steps__name">Встречаемся и обсуждаем будущий проект</p>
-					</li>
-					<li class="steps__item">
-						<div class="steps__icon">
-							<div class="steps__overlay">
-								<img class="steps__img" src="img/meet-icon.png" alt="Встречаемся и обсуждаем будущий проект">
-							</div>
-						</div>
-						<p class="steps__name">Встречаемся и обсуждаем будущий проект</p>
-					</li>
-					<li class="steps__item">
-						<div class="steps__icon">
-							<div class="steps__overlay">
-								<img class="steps__img" src="img/meet-icon.png" alt="Встречаемся и обсуждаем будущий проект">
-							</div>
-						</div>
-						<p class="steps__name">Встречаемся и обсуждаем будущий проект</p>
 					</li>
 				</ul>
-			</section>
-			<section class="news">
-				<div class="news__content content content--min">
-					<span class="content__text-overlay news__headline-overlay">
-						<span class="lighten-text lighten-text--headline">Новости</span>  компании
-					</span>
-					<p class="content__descr">Успех</p>
-					<h2 class="content__headline headline"><span class="lighten-text lighten-text--headline">Новости</span> компании</h2>
-					<div class="content__text">
-						Наша компания это дружный и креативный коллектив, мы стремимся строить ипроектировать лучшие дома и коттеджи в Москве и области, вкладывая 100% своих возможностей в общее дело. Мы специализируемся на строите
-					</div>
-				</div>
 			</section>
 		</div>
 	</main>

@@ -953,3 +953,63 @@ section {
 .projects__arrow.btn--next {
   right: 42%;
 }
+/** Страница - стройка **/
+/* Block - news */
+.steps__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+.steps__item {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  width: 25%;
+}
+.steps__icon,
+.steps__overlay {
+  width: 116px;
+  height: 116px;
+}
+.steps__icon {
+  background-color: #71c10d;
+}
+.steps__overlay {
+  position: relative;
+  top: 10px;
+  left: 8px;
+  background-color: #404040;
+}
+.steps__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.steps__name {
+  margin-top: 30px;
+  max-width: 208px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+}
+/* Block - news */
+.news__content {
+  margin: 0 auto;
+  text-align: center;
+}
+.news__headline-overlay {
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
