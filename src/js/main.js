@@ -91,8 +91,8 @@ $(document).ready(function(){
 
 	// Открытие/Закрытие окна обратного звонка
 	$(".btn--callback").click(function(){
-		$(".modal").fadeIn(500);
-		$(".modal__content--callback").fadeIn(400);
+		$(".modal").fadeIn(300);
+		$(".modal__content--callback").fadeIn(300);
 		$("html").addClass("popup-opened");
 	});	
 
