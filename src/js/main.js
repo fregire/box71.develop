@@ -85,3 +85,4 @@ $(document).ready(function(){
 		$(this).addClass("projects__option--current");
 	});
 });
+	

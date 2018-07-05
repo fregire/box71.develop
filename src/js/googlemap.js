@@ -10,7 +10,7 @@ var initMap = function() {
       position: uluru,
       map: mapGoogle,
       icon: {
-        url: "../img/map-marker_icon.png",
+        url: "img/map-marker_icon.png",
         scaledSize: new google.maps.Size(55, 80)
       }
     });

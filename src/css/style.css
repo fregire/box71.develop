@@ -621,7 +621,7 @@ section {
   webkit-overflow-scrolling: touch;
 }
 .modal__overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -740,6 +740,9 @@ section {
   z-index: 10;
 }
 /* Block - project */
+.project__main-pict.slick-initialized.slick-slider {
+  overflow: hidden;
+}
 .project__main-pict {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -908,6 +911,7 @@ section {
   top: 0;
   left: 0;
   margin-top: 60px;
+  width: 100%;
   -webkit-transition: all 300ms;
   -o-transition: all 300ms;
   transition: all 300ms;
@@ -946,6 +950,7 @@ section {
   z-index: 0;
 }
 .show-tab__content {
+  width: 100%;
   margin-top: auto;
   padding-top: 15px;
   padding-left: 20px;
