@@ -903,9 +903,16 @@ section {
 
 /* Block - build */
 .build {
+	position: relative;
+
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding-bottom: 40px;
+}
+
+.build--no-padding {
+	padding-bottom: 0
 }
 
 .build__content {
@@ -925,6 +932,26 @@ section {
 
 .build-portfolio {
 	margin-bottom: 60px;
+}
+
+.build__tab-text {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 60px;
+
+
+	transition: all 300ms;
+}
+
+.build__tab-text--current {
+	display: block;
+	position: static;
+}
+
+.build__tab-text p:last-child {
+	margin-bottom: 0;
 }
 
 /* Block - show-tab */

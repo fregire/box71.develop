@@ -84,9 +84,11 @@ $(document).ready(function(){
 	$(".tabs__item").click(function(){
 		var $id = $(this).attr("data-id");
 		$(".tabs__item").removeClass("tabs__item--active");
+		$(".build__tab-text").removeClass("build__tab-text--current");
 		$(this).addClass("tabs__item--active");
 		$(".show-tab").removeClass("show-tab--active");
-		$(".show-tab#" + $id).addClass("show-tab--active");
+		$(".show-tab[data-id='" + $id + "'").addClass("show-tab--active");
+		$(".build__tab-text[data-id='" + $id + "'").addClass("build__tab-text--current");
 	});
 
 	// Открытие/Закрытие окна обратного звонка
