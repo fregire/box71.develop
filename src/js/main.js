@@ -15,15 +15,41 @@ $(document).ready(function(){
 	// Из чего мы строим табы с материалами
 	$(".tabs").slick({
 		slidesToShow: 4,
+		slidesToScroll: 1,
 		prevArrow: "<button class='tabs__btn btn btn--arrow btn--prev'>Назад</button>",
 		nextArrow: "<button class='tabs__btn btn btn--arrow btn--next'>Еще</button>",
 	});
 
-	$(".projects__list").slick({
+	// Слайдер с проектами
+	$(".projects__list").not(".projects__list--top").slick({
 		slidesToShow: 4,
 		prevArrow: "<button class='projects__arrow btn btn--arrow btn--prev'>Назад</button>",
 		nextArrow: "<button class='projects__arrow btn btn--arrow btn--next'>Еще</button>",
 		lazyLoad: 'ondemand',
+	});
+
+	$(".projects__list--top").slick({
+		slidesToShow: 4,
+		lazyLoad: 'ondemand'
+	});
+
+	$(".projects__arrow.btn--next").click(function(){
+		$(".projects__list").slick("slickNext");
+	});
+
+	$(".projects__arrow.btn--prev").click(function(){
+		$(".projects__list").slick("slickPrev");
+	});
+
+	// Фильтрация проектов
+	$(".btn--filter").click(function(){
+		$(".slider").slick('slickUnfilter');
+		if($(this).hasClass("projects__option--current")){
+			$(".projects__list").slick("slickUnfilter");
+		} else {
+			$(".projects__list").slick('slickFilter', function() { return $('.red', this).length === 1; });
+		}
+		
 	});
 
 	// Из чего мы строим
@@ -81,8 +107,7 @@ $(document).ready(function(){
 	});
 	// Фильтр проектов
 	$(".projects__option").click(function(){
-		$(this).addClass("projects__option--current");
-		$(this).addClass("projects__option--current");
+		$(this).toggleClass("projects__option--current");
 	});
 });
 	

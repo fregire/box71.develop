@@ -1085,6 +1085,9 @@ section {
   margin: 0 -83px;
   margin-bottom: 90px;
 }
+.projects__list--top {
+  margin-bottom: 10px;
+}
 .projects__item {
   position: relative;
   width: 286px;
