@@ -821,6 +821,29 @@ section {
 	cursor: pointer;
 	opacity: .8;
 }
+
+.modal__loader {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: calc(50% - 50px);
+
+	width: 100px;
+	height: 100px;
+
+	border-top: 5px solid #fff;
+	border-radius: 50%;
+
+	animation: loader .5s ease-in-out infinite;
+}
+
+@keyframes loader {
+	form {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(360deg);
+	}
+}
 /* Block - form */
 .form {
 	text-align: center;
