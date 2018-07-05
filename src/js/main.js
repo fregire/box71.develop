@@ -67,6 +67,20 @@
 	btnPrev.addEventListener("click", moveToPrevSlide);
 })();
 $(document).ready(function(){
+
+	// Форма поиска 
+	$(".search__find").click(function(e){
+		e.preventDefault();
+		$(this).parent().parent().addClass("search--opened");
+		$(this).siblings(".search__input").focus();
+	});
+	$(".search__close").click(function(e){
+		e.preventDefault();
+		$(this).parent().parent().removeClass("search--opened");
+		$(this).siblings(".search__input").val("");
+	});
+
+	// Из чего мы строим табы с материалами
 	$(".tabs").slick({
 		slidesToShow: 4,
 		prevArrow: "<button class='tabs__btn btn btn--arrow btn--prev'>Назад</button>",
