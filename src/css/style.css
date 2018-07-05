@@ -1326,3 +1326,17 @@ section {
 .contacts__map {
   height: 400px;
 }
+/** Страница - Из чего мы строим **/
+.build__tabs .btn--prev {
+  left: 50%;
+  -webkit-transform: translate(-120%, 0);
+      -ms-transform: translate(-120%, 0);
+          transform: translate(-120%, 0);
+}
+.build__tabs .btn--next {
+  left: auto;
+  right: 50%;
+  -webkit-transform: translate(120%, 0);
+      -ms-transform: translate(120%, 0);
+          transform: translate(120%, 0);
+}
