@@ -761,6 +761,9 @@ section {
   margin-right: 65px;
   background-color: #404040;
 }
+.build-portfolio {
+  margin-bottom: 60px;
+}
 /* Block - show-tab */
 .show-tab {
   position: absolute;
