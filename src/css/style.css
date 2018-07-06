@@ -194,6 +194,8 @@ section {
   background-color: #404040;
 }
 .header__logo {
+  position: relative;
+  left: 0;
   margin-top: 9px;
 }
 .header__search {
@@ -237,6 +239,19 @@ section {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+}
+.menu__phone-trigger {
+  display: none;
+  width: 40px;
+  height: 27px;
+  background-image: url(../img/menu-burger_icon.png);
+  background-size: cover;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.menu__phone-trigger:hover {
+  cursor: pointer;
 }
 /* Block - search */
 .search {
@@ -527,6 +542,10 @@ section {
   height: 2px;
   background-color: #fff;
 }
+.footer__search {
+  margin-right: 35px;
+  margin-left: 55px;
+}
 .social__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,6 +638,7 @@ section {
   transition: all 400ms;
   overflow-y: scroll;
   webkit-overflow-scrolling: touch;
+  z-index: 2;
 }
 .modal__overlay {
   position: fixed;
@@ -1103,6 +1123,7 @@ section {
 }
 .projects__item-bg {
   width: 100%;
+  height: 100%;
 }
 .projects__item:hover .projects__overlay {
   opacity: 1;
@@ -1148,13 +1169,19 @@ section {
 }
 .projects__arrow {
   position: absolute;
-  bottom: -42px;
+  bottom: -30px;
 }
 .projects__arrow.btn--prev {
-  left: 42%;
+  left: 50%;
+  -webkit-transform: translate(-110%, 0);
+      -ms-transform: translate(-110%, 0);
+          transform: translate(-110%, 0);
 }
 .projects__arrow.btn--next {
-  right: 42%;
+  right: 50%;
+  -webkit-transform: translate(110%, 0);
+      -ms-transform: translate(110%, 0);
+          transform: translate(110%, 0);
 }
 .projects__filter {
   position: absolute;

@@ -1,0 +1,45 @@
+{
+	"houses": [
+		{
+			"id": "1",
+			"name": "Нортон (дерево)",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum culpa sapiente nesciunt sunt quasi praesentium doloremque fugit officiis, harum a!",
+			"pictures": [
+				"img/project-example.png",
+				"img/project-example-1.png",
+				"img/project-example-2.png",
+				"img/project-example-3.png",
+				"img/project-example-4.png",
+				"img/project-example-5.png"
+			]
+		},
+		{
+			"id": "2",
+			"name": "Нортон (дерево)",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum culpa sapiente nesciunt sunt quasi praesentium doloremque fugit officiis, harum a!",
+			"pictures": [
+				"img/project-example.png",
+				"img/project-example-1.png",
+				"img/project-example-2.png",
+				"img/project-example-3.png",
+				"img/project-example-4.png",
+				"img/project-example-5.png"
+			]
+		},
+		{
+			"id": "3",
+			"name": "Нортон (дерево)",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum culpa sapiente nesciunt sunt quasi praesentium doloremque fugit officiis, harum a!",
+			"pictures": [
+				"img/project-example.png",
+				"img/project-example-1.png",
+				"img/project-example.png",
+				"img/project-example.png",
+				"img/project-example.png",
+				"img/project-example.png"
+			]
+		}
+
+
+	]
+}
