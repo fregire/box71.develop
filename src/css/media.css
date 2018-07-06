@@ -68,9 +68,9 @@
   }
   .header__logo {
     margin-left: 20px;
-    -webkit-transition: all 300ms;
-    -o-transition: all 300ms;
-    transition: all 300ms;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
   }
   /* Block - logo */
   .header .logo__descr {
@@ -91,7 +91,7 @@
     height: 100%;
   }
   .nav--opened .menu__list {
-    height: 600px;
+    left: -15px;
     border-width: 1px;
   }
   .nav--opened .header__logo {
@@ -123,13 +123,13 @@
   }
   .menu__list {
     position: absolute;
-    left: -15px;
+    left: -200px;
     top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 0;
+    height: 600px;
     background-color: #404040;
     z-index: 1;
     overflow: hidden;
