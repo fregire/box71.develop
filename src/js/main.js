@@ -9,13 +9,13 @@ $(document).ready(function(){
 		e.preventDefault();
 		$(this).parent().parent().addClass("search--opened");
 		$(this).siblings(".search__input").focus();
-		
+
 	});
 	$(".search__close").click(function(e){
 		e.preventDefault();
 		$(this).parent().parent().removeClass("search--opened");
 		$(this).siblings(".search__input").val("");
-		
+
 	});
 
 	// Из чего мы строим табы с материалами
@@ -29,6 +29,12 @@ $(document).ready(function(){
 				breakpoint: 1000,
 				settings: {
 					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 4
 				}
 			}
 
@@ -47,6 +53,20 @@ $(document).ready(function(){
 				settings: {
 					slidesToShow: 3
 				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 2,
+					centerMode: true
+				}
+			},
+			{
+				breakpoint: 620,
+				settings: {
+					slidesToShow: 2,
+					centerMode: false
+				}
 			}
 
 		]
@@ -60,6 +80,20 @@ $(document).ready(function(){
 				breakpoint: 1000,
 				settings: {
 					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 2,
+					centerMode: true
+				}
+			},
+			{
+				breakpoint: 620,
+				settings: {
+					slidesToShow: 2,
+					centerMode: false
 				}
 			}
 
@@ -101,7 +135,7 @@ $(document).ready(function(){
 		$(".modal").fadeIn(300);
 		$(".modal__content--callback").fadeIn(300);
 		$("html").addClass("popup-opened");
-		
+
 	});	
 
 	$(".modal__close").not(".modal__close--order").click(function(){
@@ -110,7 +144,7 @@ $(document).ready(function(){
 		$(".modal__content--project").fadeOut();
 		$(".modal__content--order").fadeOut();
 		$("html").removeClass("popup-opened");
-		
+
 	});
 
 	$(".projects__item").click(function(){
@@ -118,7 +152,7 @@ $(document).ready(function(){
 		$(".modal").fadeIn(500);
 		$(".modal__content--project").fadeIn(400);
 		$("html").addClass("popup-opened");
-		
+
 	});
 
 	$(".project__pict-slider").slick({
@@ -127,6 +161,31 @@ $(document).ready(function(){
 		focusOnSelect: true,
 		prevArrow: "<button class='project__arrows btn btn--arrow btn--prev'>Назад</button>",
 		nextArrow: "<button class='project__arrows btn btn--arrow btn--next'>Еще</button>",
+		responsive: [
+			{
+				breakpoint: 870,
+				settings: {
+					slidesToShow: 4,
+					vertical: true
+				}
+
+			},
+			{
+				breakpoint: 870,
+				settings: {
+					slidesToShow: 4,
+					vertical: false
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 3,
+					vertical: false
+				}
+			}
+
+		]
 	});
 	$(".project__main-pict").slick({
 		slidesToShow: 1,
@@ -135,18 +194,18 @@ $(document).ready(function(){
 	$(".btn--order").click(function(){
 		$(".modal__content--order").fadeIn(400);
 		$(".modal__overlay").css("z-index", "10");
-		
+
 	});
 
 	$(".modal__close--order").click(function(){
 		$(".modal__content--order").fadeOut(400);
 		$(".modal__overlay").css("z-index", "-1");
-		
+
 	});
 	// Фильтр проектов
 	$(".projects__option").click(function(){
 		$(this).toggleClass("projects__option--current");
-		
+
 	});
 });
 	

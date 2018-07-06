@@ -912,8 +912,9 @@ section {
   margin-bottom: 25px;
 }
 .build__right-part {
-  position: relative;
-  bottom: -20px;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
   width: 370px;
   height: 285px;
   margin-right: 65px;
