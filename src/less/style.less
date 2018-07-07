@@ -745,11 +745,18 @@ section {
 }
 
 .social__link {
+	position: relative;
 	display: inline-block;
 	.size(28px, 28px);
 
 	background-repeat: no-repeat;
 	background-position: center bottom;
+}
+
+.social__link img {
+	position: absolute;
+	bottom: 0;
+	width: 90%;
 }
 
 .politics {

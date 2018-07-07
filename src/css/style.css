@@ -625,11 +625,17 @@ section {
   width: 100px;
 }
 .social__link {
+  position: relative;
   display: inline-block;
   width: 28px;
   height: 28px;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+.social__link img {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
 }
 .politics {
   max-width: 495px;
