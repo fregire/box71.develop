@@ -58,6 +58,13 @@ $(document).ready(function(){
 				settings: {
 					arrows: false
 				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 2,
+					arrows: false
+				}
 			}
 
 		]
@@ -209,6 +216,13 @@ $(document).ready(function(){
 					slidesToShow: 3,
 					vertical: false
 				}
+			},
+			{
+				breakpoint: 390,
+				settings: {
+					slidesToShow: 2,
+					vertical: false
+				}
 			}
 
 		]
@@ -219,14 +233,13 @@ $(document).ready(function(){
 	});
 	$(".btn--order").click(function(){
 		$(".modal__content--order").fadeIn(400);
-		$(".modal__overlay").css("z-index", "10");
+		$(".modal__overlay").css("display", "block");
 
 	});
 
 	$(".modal__close--order").click(function(){
 		$(".modal__content--order").fadeOut(400);
-		$(".modal__overlay").css("z-index", "-1");
-
+		$(".modal__overlay").css("display", "none");
 	});
 	// Фильтр проектов
 	$(".projects__option").click(function(){

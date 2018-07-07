@@ -4,10 +4,10 @@ $(".menu__phone-trigger").click(function(){
 });
 
 $(document).click(function(e){
-	if(e.target === document.querySelector(".modal__overlay")){
+	if(e.target === document.querySelector(".modal")){
 		if($(".nav").hasClass("nav--opened")){
 			$(".nav").removeClass("nav--opened");
 			$(".modal").css("display", "none");
 		}
 	}
-})
+});

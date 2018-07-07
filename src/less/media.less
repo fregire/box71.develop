@@ -140,6 +140,7 @@
 
 		flex-direction: column;
 		height: 600px;
+		min-height: 100vh;
 
 		background-color: @menuBG;
 
@@ -228,9 +229,6 @@
 	/* Block - project */
 	.modal__content--project {
 		width: 88%;
-	}
-	.modal__content--project .modal__close {
-		right: -35px;
 	}
 }
 
@@ -570,7 +568,8 @@
 	.project__preview {
 		padding-left: 15px;
 	}
-	.project__descr-headline {
+	.project__descr-headline,
+	.project__btn {
 		margin-left: 15px;
 	}
 	.project__param-name {
@@ -580,4 +579,116 @@
 	.content__text-overlay {
 		font-size: 60px;
 	}
+}
+
+@media screen and (max-width: 480px){
+	/* Block - story */
+	.story__steps-img,
+	.story__house {
+		width: 300px;
+	}
+
+	/* Block - footer */
+	.footer__social {
+		margin-left: 20px;
+	}
+	.footer__faq {
+		font-size: 24px;
+	}
+	/* Block - project */
+	.project__main-pict {
+		height: 240px;
+	}
+	.project__param-name {
+		vertical-align: top;
+	}
+}
+
+@media screen and (max-width: 390px){
+	/* Block - story */
+	.story__steps-img {
+		width: 250px;
+		left: 100px;
+	}
+	/* Block - footer */
+	.footer__bottom {
+		height: auto;
+		flex-direction: row;
+	}
+	.footer__politics,
+	.footer__faq {
+		position: relative;
+	}
+	.footer__contacts,
+	.footer__politics {
+		width: 100%;
+		flex-basis: 100%;
+	}
+	.footer__politics {
+		margin: 20px 0;
+	}
+	.footer__social {
+		margin-left: 0;
+	}
+
+	/* Block - modal */
+	.modal__content--callback, 
+	.modal__content--order,
+	.modal__content--project {
+		width: 95%;
+	}
+	.modal__content--callback, 
+	.modal__content--order {
+		padding: 30px 20px;
+	}
+	.modal__close {
+		right: 0;
+	}
+	/* Block - slider-head */
+	.slider-head__item {
+		height: 180px;
+	}
+	.slider-head__content {
+		top: 200px;
+	}
+	.slider-head__text {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Block - content */
+	.content__text-overlay {
+		font-size: 50px;
+	}
+	.content__text-overlay {
+		top: 20px;
+		font-size: 45px;
+	}
+	/* Block - header */
+	.header__slider {
+		margin-bottom: 180px;
+	}
+	.header__search {
+		display: none;
+	}
+	.header__logo {
+		margin-left: 10px;
+	}
+
+	/* Block - project */
+	.project__preview {
+		padding-top: 30px;
+	}
+	.project__param-name {
+		width: 200px;
+		padding-right: 20px;
+	}
+	.project__main-pict {
+		width: 90%;
+	}
+	/* Block - callback */
+	.header .callback {
+		width: 140px;
+	}
+
 }

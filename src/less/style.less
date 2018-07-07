@@ -545,6 +545,7 @@ section {
 
 	background-size: cover;
 	background-position: center -20px;
+	background-repeat: no-repeat;
 
 	z-index: -10;
 	opacity: 0;	
@@ -840,6 +841,7 @@ section {
 }
 
 .modal__overlay {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -850,6 +852,8 @@ section {
 	height: 250%;
 
 	background-color: rgba(0,0,0,.5);
+
+	z-index: 10;
 }
 
 .modal__content {
@@ -930,6 +934,7 @@ section {
 }
 
 .modal__search {
+	display: none;
 	position: absolute;
 	top: 125px;
 	left: 50%;
