@@ -4,19 +4,35 @@ $(document).ready(function(){
 			$(".nav").removeClass("nav--opened");
 		}
 	}
+
 	// Форма поиска 
-	$(".search__find").click(function(e){
+	var expandSearchField = function(e){
 		e.preventDefault();
 		$(this).parent().parent().addClass("search--opened");
 		$(this).siblings(".search__input").focus();
-
-	});
-	$(".search__close").click(function(e){
+	}
+	var hideSearchField = function(e){
 		e.preventDefault();
 		$(this).parent().parent().removeClass("search--opened");
 		$(this).siblings(".search__input").val("");
-
-	});
+	}
+	var openSearchField = function() {
+		$(".modal").fadeIn();
+		$(".modal__search").css("display", "block");
+		$(".mobile-search__field").focus();
+	}
+	var closeSearchField = function(){
+		$(".modal__search").css("display", "none");
+		$(".mobile-search__field").blur();
+		$(".modal").fadeOut();
+	}
+	if($(window).width() <= 600){
+		$(".search__find").click(openSearchField);
+		$(".search__close--mobile").click(closeSearchField);
+	} else {
+		$(".search__find").click(expandSearchField);
+		$(".search__close--desktop").click(hideSearchField);
+	}
 
 	// Из чего мы строим табы с материалами
 	$(".tabs").slick({
@@ -35,6 +51,12 @@ $(document).ready(function(){
 				breakpoint: 800,
 				settings: {
 					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					arrows: false
 				}
 			}
 
@@ -62,11 +84,15 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 620,
+				breakpoint: 640,
 				settings: {
 					slidesToShow: 2,
 					centerMode: false
 				}
+			},
+			{
+				breakpoint: 600,
+				settings: "unslick"
 			}
 
 		]

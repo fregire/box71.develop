@@ -30,6 +30,8 @@ html {
     -webkit-text-size-adjust:100%;
     -webkit-tap-highlight-color:transparent;
     -webkit-font-smoothing: antialiased;
+
+    overflow-x: hidden;
 }
 
 body {
@@ -37,11 +39,14 @@ body {
 
 	padding: 0;
 	margin: 0;
+	width: 100%;
 	
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 12px;
 	line-height: 1.33;
 	color: @mainFontColor;
+
+	overflow-x: hidden;
 }
 
 section {
@@ -219,11 +224,16 @@ section {
 /*** Global Styles ***/
 
 /* Block - header */
+.header {
+	display: flex;
+	flex-direction: column;
+}
 .header__slider {
 	position: relative;
 
 	height: 375px;
 	max-width: 1170px;
+	width: 100%;
 	padding: 0 15px;
 	margin: 0 auto;
 	z-index: 0;
@@ -393,8 +403,16 @@ section {
 	background-image: url(../img/close_icon.png);
 
 	z-index: -1;
+}
+
+.search__close--desktop {
 	visibility: hidden;
 	opacity: 0;
+}
+
+.search__close--mobile {
+	visibility: visible;
+	opacity: 1;
 }
 
 .search__close,
@@ -445,6 +463,46 @@ section {
 .search--opened .search__find:after {
 	display: block;
 }
+/* Block - mobile-search */
+.mobile-search {
+	position: relative;
+	display: block;
+
+	text-align: center;
+}
+
+.mobile-search__field {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 500;
+
+	background-color: transparent;
+	border: none;
+}
+
+.mobile-search__btn {
+	margin-top: 23px;
+	width: 145px;
+}
+
+.mobile-search__field {
+	display: block;
+	width: 180px;
+	outline: none;
+}
+
+.mobile-search__btn-close {
+	right: -25px;
+	top: 4px;
+
+	width: 20px;
+	height: 23px;	
+}
+
+.mobile-search__field::-webkit-input-placeholder { color: #fff; }
+.mobile-search__field:-ms-input-placeholder { color: #fff; }
+.mobile-search__field::-ms-input-placeholder { color: #fff; }
+.mobile-search__field::placeholder { color: #fff; } 
 /* Block - callback */
 .callback {
 	width: 195px;
@@ -870,6 +928,13 @@ section {
 		transform: rotate(360deg);
 	}
 }
+
+.modal__search {
+	position: absolute;
+	top: 125px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
 /* Block - form */
 .form {
 	text-align: center;
@@ -1031,6 +1096,28 @@ section {
 	padding-top: 30px;
 
 	background: #eeebeb;
+}
+
+.story__steps:after,
+.story__steps:before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
+	width: 600px;
+	content: "";
+	display: block;
+
+	z-index: -1;
+	background-color: #eeebeb;
+}
+
+.story__steps:after {
+	left: 0;
+}
+
+.story__steps:before {
+	right: 0;
 }
 
 .story__steps-headline {

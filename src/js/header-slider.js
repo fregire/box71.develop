@@ -7,6 +7,7 @@
 	var prevIndexElem = document.querySelector(".slider-head__index-prev");
 	var MAX_INDEX = headerSlides.length;
 	var currentIndex = 0;
+	var screenWidth = document.body.clientWidth;
 
 	prevIndexElem.innerHTML = "0" + MAX_INDEX;
 	btnPrev.style.backgroundImage = headerSlides[headerSlides.length - 1].style.backgroundImage;
@@ -65,4 +66,7 @@
 	}
 	btnNext.addEventListener("click", moveToNextSlide);
 	btnPrev.addEventListener("click", moveToPrevSlide);
+	window.addEventListener("load", function(){
+		setInterval(moveToNextSlide, 6000);
+	});
 })();

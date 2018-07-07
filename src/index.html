@@ -83,7 +83,7 @@
 					<div class="search__inner">
 						<input class="search__input" type="text" placeholder="Поиск по сайту">		
 						<button class="search__find" aria-label="Искать на сайте"></button>
-						<button class="search__close" aria-label="Скрыть форму поиска"></button>				
+						<button class="search__close search__close--desktop" aria-label="Скрыть форму поиска"></button>				
 					</div>
 				</form>
 				<div class="callback">
@@ -354,7 +354,7 @@
 			</div>
 		</div>
 		<div class="footer__bottom">
-			<div class="social social--max">
+			<div class="footer__social social social--max">
 				<h3 class="footer__headline">Мы в соц сетях</h3>
 				<ul class="social__items">
 					<li class="social__item">
@@ -369,7 +369,7 @@
 
 				</ul>
 			</div>
-			<div class="social social--min">
+			<div class="footer__social social social--min">
 				<h3 class="footer__headline">Месенджеры</h3>
 				<ul class="social__items">
 					<li class="social__item">
@@ -380,7 +380,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="politics">
+			<div class="footer__politics politics">
 				<div class="politics__text">
 					Сайт«BOX71.RU» использует файлы «cookie» с целью персонализации сервисов и повышения удобства пользования веб-сайтом. «Cookie» представляют собой небольшие файлы, содержащие информацию о предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы «cookie», 
 					измените настройки браузера.
@@ -551,6 +551,13 @@
 				<button class="project__btn btn btn--main btn--order">Заказать проект</button>
 			</div>
 			<button class="modal__close" aria-label="Закрыть окно"></button>
+		</div>
+		<div class="modal__search">
+			<form action="" class="mobile-search">
+				<input class="mobile-search__field" type="text" placeholder="Поиск по сайту">
+				<input class="mobile-search__btn btn btn--main" type="submit" value="Искать">
+				<button class="search__close search__close--mobile mobile-search__btn-close"></button>
+			</form>
 		</div>
 	</div>
 	<script src="js/jquery.min.js"></script>

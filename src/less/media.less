@@ -106,6 +106,7 @@
 	.nav--opened .menu__list {
 		left: -15px;
 		border-width: 1px;
+		z-index: 10;
 	}
 	.nav--opened .header__logo {
 		left: 90px;
@@ -134,7 +135,7 @@
 	}
 	.menu__list {
 		position: absolute;
-		left: -200px;
+		left: -250px;
 		top: 0;
 
 		flex-direction: column;
@@ -393,5 +394,190 @@
 	}
 	.project__param-name {
 		width: 300px;
+	}
+
+	/* Block - story */
+	.story__steps-img {
+		left: 180px;
+		bottom: -120px;	
+	}
+
+	/* Block - search */
+	.search__input {
+		width: 300px;
+	}
+
+	/* Block - modal */
+	.modal__content--callback,
+	.modal__content--order {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 600px){
+	/* Block - logo */
+	.header .logo__image {
+		width: 15px;
+	}
+	.logo__headline {
+		font-size: 24px;
+	}
+	
+	/* Block - nav */
+	.header .nav {
+		height: 42px;
+	}
+
+	.main__inner,
+	.nav__inner,
+	.footer__bottom {
+		max-width: 480px;
+	}
+
+	/* Block - menu */
+	.menu li a {
+		height: 42px;
+		line-height: 42px;
+	}
+	.menu__list {
+		justify-content: flex-start;
+	}
+
+	/* Block - header */
+	.header__slider:after,
+	.header__slider:before,
+	.slider-head__arrow {
+		display: none;
+	}
+	.header__slider {
+		height: 214px;
+		order: 1;
+		overflow: visible;
+		margin-bottom: 240px;
+	}
+
+	/* Block - slider-head */
+	.slider-head__content {
+		position: absolute;
+		top: 250px;
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		margin-left: auto;
+		min-width: 320px;
+
+		text-align: center;
+	}
+	.slider-head__item {
+		height: 100%;
+	}
+	/* Block - story */
+	.story__steps {
+		margin-bottom: 100px;
+	}
+	.story__steps-img {
+		width: 350px;
+		left: 130px;
+		bottom: -86px;
+	}
+
+	/* Block - projects */
+	.projects__content {
+		text-align: center;
+	}
+	.projects .content__text-overlay {
+		display: none;
+	}
+	.projects__item,
+	.projects__item:nth-child(2) {
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 30px;
+	}
+	.projects__item:last-child {
+		display: none;
+	}
+	.projects__overlay {
+		opacity: 1;
+
+		background: none;
+	}
+	.projects__tags {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+
+		padding: 10px 30px;
+
+		text-align: left;
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+
+	/* Block - politics */
+	.politics__text {
+		display: none;
+	}
+
+	/* Block - footer */
+	.footer__contacts {
+		position: relative;
+
+		order: -1;
+		margin-top: 0;
+
+		text-align: left;
+	}
+	.footer__faq {
+		position: absolute;
+		top: 120%;
+		left: 0;
+	}
+	.footer__bottom {
+		position: relative;
+
+		flex-direction: column;
+		height: 300px;
+		justify-content: flex-start;
+	}
+	.footer__contacts-info:last-child {
+		margin-bottom: 0;
+	}
+	.footer__social {
+		margin-left: 80px;
+	}
+	/* Block - politics */
+	.politics__link {
+		margin: 0;
+		font-size: 12px;
+	}
+	/* Block - social */
+	.social:nth-child(2) {
+		order: 1;
+	}
+	.social__link {
+		width: 45px;
+		height: 43px;
+	}
+	.social__items {
+		max-width: 150px;
+	}
+
+	/* Block - project */
+	.project__preview {
+		padding-right: 15px;
+	}
+	.project__param-name,
+	.project__preview {
+		padding-left: 15px;
+	}
+	.project__descr-headline {
+		margin-left: 15px;
+	}
+	.project__param-name {
+		width: 230px;
+	}
+
+	.content__text-overlay {
+		font-size: 60px;
 	}
 }
