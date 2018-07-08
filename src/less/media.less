@@ -75,6 +75,10 @@
 	.modal__content--project .modal__close {
 		right: 0;
 	}
+	/* Block - news */
+	.news__intro {
+		height: 230px;
+	}
 }
 
 @media screen and (max-width: 950px){
@@ -139,6 +143,7 @@
 		top: 0;
 
 		flex-direction: column;
+		justify-content: flex-start;
 		height: 600px;
 		min-height: 100vh;
 
@@ -310,6 +315,29 @@
 	.project__btn  {
 		margin-left: 30px;
 	}
+	/* Block - news */
+	.news__articles {
+		justify-content: space-around;
+	}
+	.news__item {
+		width: 60%;
+		margin-bottom: 30px;
+	}
+	/* Block - steps */
+	.steps__item {
+		width: 33%;
+		flex-basis: 33%;
+	}
+	.steps__item:nth-child(4) .steps__arrow {
+		display: block;
+	}
+	.steps__item:nth-child(3) .steps__arrow,
+	.steps__item:nth-child(6) .steps__arrow {
+		display: none;
+	}
+	.steps__item:nth-child(7) .steps__arrow {
+		right: 0;
+	}
 }
 
 @media screen and (max-width: 800px){
@@ -321,6 +349,7 @@
 
 	/* Block - build */
 	.build__right-part {
+		top: 0;
 		position: relative;
 		bottom: 0;
 	}
@@ -348,6 +377,10 @@
 		right: auto;
 		left: 50%;
 		transform: translate(-110%, 0);
+	}
+	/* Block - news */
+	.news__item {
+		width: 75%;
 	}
 }
 @media screen and (max-width: 775px){
@@ -379,6 +412,18 @@
 	.project__main-pict {
 		height: 400px;
 	}
+	/* Block - steps */
+	.steps__item {
+		width: 50%;
+		flex-basis: 50%;
+	}
+	.steps__item:nth-child(odd) .steps__arrow {
+		display: block;
+		right: 25%;
+	}
+	.steps__item:nth-child(even) .steps__arrow {
+		display: none;
+	}
 }
 @media screen and (max-width: 680px){
 	/* Block - modal */
@@ -393,7 +438,15 @@
 	.project__param-name {
 		width: 300px;
 	}
+	/* Block - projects */
+	.projects__filter {
+		position: static;
 
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 25px;
+	}
 	/* Block - story */
 	.story__steps-img {
 		left: 180px;
@@ -409,6 +462,10 @@
 	.modal__content--callback,
 	.modal__content--order {
 		width: 80%;
+	}
+	/* Block - news */
+	.news__item {
+		width: 85%;
 	}
 }
 @media screen and (max-width: 600px){
@@ -486,7 +543,8 @@
 		display: none;
 	}
 	.projects__item,
-	.projects__item:nth-child(2) {
+	.projects__item:nth-child(2),
+	.projects__link {
 		margin-right: auto;
 		margin-left: auto;
 		margin-bottom: 30px;
@@ -575,13 +633,27 @@
 	.project__param-name {
 		width: 230px;
 	}
+	/* Block - projects */
+	.projects__filter {
+		justify-content: space-around;
+	}
 
 	.content__text-overlay {
 		font-size: 60px;
 	}
+	/* Block - news */
+	.news__item {
+		width: 100%;
+		height: 350px;
+	}
 }
 
 @media screen and (max-width: 480px){
+	/* Block - modal */
+	.modal__content--callback, 
+	.modal__content--order {
+		padding: 30px 20px;
+	}
 	/* Block - story */
 	.story__steps-img,
 	.story__house {
@@ -602,6 +674,60 @@
 	.project__param-name {
 		vertical-align: top;
 	}
+	/* Block - steps */
+	.steps__item {
+		width: 100%;
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+	.steps__icon,
+	.steps__name {
+		margin-left: 20%;
+	}
+	.steps__icon,
+	.steps__overlay {
+		width: 130px;
+		height: 130px;
+	}
+	.steps__item .steps__arrow {
+		display: block;
+	}
+	.steps__arrow {
+		top: auto;
+		left: 38%;
+		bottom: -20px;
+		transform: rotate(90deg);
+	}
+	.steps__item:nth-child(even) .steps__arrow {
+		display: block;
+	}
+	/* Block - news */
+	.news__intro {
+		height: 250px;
+		padding-top: 10px;	
+	}
+	.news__item-text {
+		padding-right: 10%;
+	}
+	
+	/* Block - header */
+	.header__search {
+		margin-left: auto;
+	}
+	/* Block - logo */
+	.header .logo__image {
+		width: 20px;
+	}
+
+	.header .logo {
+		display: none;
+	}
+	.header .menu__list li a.logo {
+		position: static;
+		display: flex;
+		justify-content: center;
+	}
+	
 }
 
 @media screen and (max-width: 390px){
@@ -637,10 +763,6 @@
 	.modal__content--project {
 		width: 95%;
 	}
-	.modal__content--callback, 
-	.modal__content--order {
-		padding: 30px 20px;
-	}
 	.modal__close {
 		right: 0;
 	}
@@ -667,12 +789,6 @@
 	/* Block - header */
 	.header__slider {
 		margin-bottom: 180px;
-	}
-	.header__search {
-		display: none;
-	}
-	.header__logo {
-		margin-left: 10px;
 	}
 
 	/* Block - project */
